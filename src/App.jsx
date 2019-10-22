@@ -4,7 +4,7 @@ import { Button } from "./components/Button";
 import { Input } from "./components/Input";
 import { ClearButton } from "./components/ClearButton";
 import * as math from "mathjs";
-
+import { evaluate } from 'mathjs';
 
 class App extends Component {
   constructor(props) {

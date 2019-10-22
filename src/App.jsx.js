@@ -5,7 +5,6 @@ import { Input } from "./components/Input";
 import { ClearButton } from "./components/ClearButton";
 import * as math from "mathjs";
 
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +19,7 @@ class App extends Component {
   };
 
   handleEqual = () => {
-    this.setState({ input: math.evaluate(this.state.input) });
+    this.setState({ input: math.eval(this.state.input) });
   };
 
   render() {
